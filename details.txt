@@ -1,0 +1,42 @@
+# The Problem Space
+
+We are surrounded by systems that no longer serve their original purpose — or never did.  
+Their inefficiencies aren't flaws. They're signals.
+
+Z532 companies interrogate these signals. Below are examples of the kinds of problems we seek to solve:
+
+---
+
+## Example System Failures
+
+**Red Lights**  
+We wait at intersections for invisible logic to change. This isn't traffic control — it's human time loss on a national scale.
+
+**Forced Lane Merging**  
+When roads collapse into fewer paths, tension rises, progress stalls, and error increases. This is poor design disguised as necessity.
+
+**Collision-Centric Transit**  
+Cars crash because humans drive them on flat surfaces without spatial escape routes. The system is built to fail slowly.
+
+**Administrative Inertia**  
+Regulatory systems prevent change by design, creating permission loops that stall evolution.
+
+**Time Drain by Design**  
+From airport security to government forms, modern life is a maze of "acceptable" friction. We reject that default.
+
+---
+
+# The Z532 Approach
+
+We don’t patch broken systems. We prototype their replacements.
+
+Every Z532 company should:
+
+- Observe deeply
+- Abstract ruthlessly
+- Build freely
+- Evolve constantly
+
+The goal is not just efficiency — it's liberation from outdated assumptions.
+
+Build something that changes the question.
