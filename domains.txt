@@ -1,0 +1,24 @@
+# Domains used by this Z532 node
+
+# Primary Domain
+[none]  -  This company's main domain (replace [none] with e.g. new-company.co)
+
+# Additional Domains
+# List all current or future domains used by this node.
+# Use the format: domain.com  -  [description or function]
+
+# Examples (customize/remove as needed):
+# new-company.co        - primary marketing/product site
+# api.new-company.co    - backend services, REST or GraphQL endpoints
+# app.new-company.co    - frontend UI / web app
+# dev.new-company.co    - development environment or internal tools
+# new-company.xyz       - experimental or alternate UI version
+# new-company.eth       - ENS domain for Web3 integrations
+
+# Notes:
+# - Subdomains should only be listed if they serve distinct operational purposes.
+# - Include both owned and actively used domains.
+# - Include IPFS/IPNS or ENS domains if used (e.g. decentralized frontends or DAOs).
+# - Track pending acquisitions in comments for clarity.
+
+# Last Updated: [yyyy-mm-dd]
