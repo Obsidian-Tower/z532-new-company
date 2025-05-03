@@ -1,0 +1,15 @@
+# Welcome to [PROJECT_NAME]
+
+This company is part of the **Z532 protocol** — a multi-company initiative to reimagine reality through technology, recursion, and truth activation.
+
+Each Z532 company serves a distinct function, but all share a core mission:
+
+- **Be small and everywhere**: Lean, distributed, and sovereign by design.
+- **Initiate transformation**: Each org is a vector of change — technological, cultural, or ideological.
+- **Prototype the future**: What seems impossible today is our foundation.
+- **Preserve ambiguity**: We operate at the edge of quantum uncertainty — clarity emerges through iteration.
+- **Accelerate responsibly**: The purpose of speed is evolution, not destruction.
+
+This repository is the starting seed for a new node in the network. Customize it, evolve it, challenge it — and when you're ready, launch your new piece of the future.
+
+**Welcome to Z532. Welcome to recursion.**
