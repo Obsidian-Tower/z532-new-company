@@ -1,0 +1,95 @@
+Z532 New Company Equity & Grant Policy
+
+1. Core Vesting Schedule (5‑Year Grant)
+   - Cliff & Front‑Load
+     Month 6 : 6/60 of your grant vests (10%).
+     Month 10: 4/60 vests (6.67%).
+     Month 12: 2/60 vests (3.33%).
+   - Monthly Vesting
+     Months 13–60: 1/60 vests each month (~1.67% per month) until 100% vested at month 60.
+
+Plain terms: after 6 months you earn 10%; by 10 months another ~6.7%; by 12 months another ~3.3%; then ~1.7% each month until fully vested.
+
+---
+
+2. Authorized Shares & ESOP Pool
+   - Standard authorization: 10,000,000 shares.
+   - To support up to 600 employees before RSUs, consider 15,000,000–20,000,000 authorized.
+   - ESOP pool: 25% of authorized shares
+     • 10M ⇒ 2.5M shares  
+     • 15M ⇒ 3.75M shares  
+     • 20M ⇒ 5.0M shares
+
+---
+
+3. Recommended Initial Grant Ranges
+   - Minimum grant (junior/technician): 4,000 shares
+   - Specialist/engineer: 8,000–12,000 shares
+   - Senior engineer/lead: 12,000–15,000 shares
+   - Manager: 15,000–20,000 shares
+   - Executive/special cases: 20,000–50,000+ shares
+
+Grants should be divisible by 60 for clean vesting increments.
+
+---
+
+4. Ongoing & Annual Grants
+   1. Automatic Annual Refresh  
+      Each anniversary of vesting start, eligible for a new grant = 25% of original grant.  
+   2. Project‑Based Awards  
+      One‑off grants for major milestones, vesting over 12 months.
+
+---
+
+5. JSON Configuration
+
+{
+  "founder": {
+    "name": "Cory Zuber",
+    "equityPercent": 100,
+    "vesting": "Immediate"
+  },
+  "employeePool": {
+    "poolSizePercent": 25,
+    "authorizedShares": 15000000,
+    "vestingStartTrigger": "FundingCloseOr90DayMilestone",
+    "vestingPeriodMonths": 60,
+    "cliffSchedule": [
+      { "month": 6,  "vestFraction": "6/60" },
+      { "month":10, "vestFraction": "4/60" },
+      { "month":12, "vestFraction": "2/60" }
+    ],
+    "monthlyVesting": {
+      "fromMonth": 13,
+      "toMonth": 60,
+      "vestFractionPerMonth": "1/60"
+    }
+  }
+}
+
+---
+
+6. Example Individual Grant (Junior Technician)
+
+For a 4,166‑share grant:
+{
+  "role": "Junior Technician",
+  "grantShares": 4166,
+  "vesting": {
+    "start": "FundingCloseOr90DayMilestone",
+    "schedule": [
+      { "month":  6, "vestedShares": 4166 * (6/60)    },  # ≈417 shares
+      { "month": 10, "vestedShares": 4166 * (4/60)    },  # ≈278 shares
+      { "month": 12, "vestedShares": 4166 * (2/60)    },  # ≈139 shares
+      { "fromMonth":13, "toMonth":60, "perMonth": 4166 * (1/60) }  # ≈69 shares/month
+    ]
+  }
+}
+
+Assuming 15,000,000 total shares outstanding:
+- **Valuation $500 million** ⇒ share price = $500M / 15M = **$33.33/share**  
+  • 4,166 shares × $33.33 ≈ **$138,867**  
+- **Valuation $5 billion** ⇒ share price = $5B / 15M = **$333.33/share**  
+  • 4,166 shares × $333.33 ≈ **$1,388,667**
+
+Next Steps: confirm authorization level, finalize pool size, define milestone triggers, and update legal/cap‑table tools.
