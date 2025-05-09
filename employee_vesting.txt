@@ -41,17 +41,21 @@ Grants should be divisible by 60 for clean vesting increments.
 
 ---
 
-5. JSON Configuration
+5. JSON Configuration (clarified)
+
+Total authorized shares for the company: 15,000,000  
+Employee stock option pool (25% of authorized shares): 3,750,000  
 
 {
   "founder": {
-    "name": "Cory Zuber",
+    "name": "Founder Name",
     "equityPercent": 100,
     "vesting": "Immediate"
   },
+  "totalAuthorizedShares": 15000000,
   "employeePool": {
     "poolSizePercent": 25,
-    "authorizedShares": 15000000,
+    "poolShares": 3750000,
     "vestingStartTrigger": "FundingCloseOr90DayMilestone",
     "vestingPeriodMonths": 60,
     "cliffSchedule": [
@@ -66,6 +70,7 @@ Grants should be divisible by 60 for clean vesting increments.
     }
   }
 }
+
 
 ---
 
