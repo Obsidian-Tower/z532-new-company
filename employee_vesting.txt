@@ -52,10 +52,10 @@ Employee stock option pool (25% of authorized shares): 3,750,000
     "equityPercent": 100,
     "vesting": "Immediate"
   },
-  "totalAuthorizedShares": 15000000,
+  "totalAuthorizedShares": 10000000,
   "employeePool": {
     "poolSizePercent": 25,
-    "poolShares": 3750000,
+    "poolShares": 2500000,
     "vestingStartTrigger": "FundingCloseOr90DayMilestone",
     "vestingPeriodMonths": 60,
     "cliffSchedule": [
